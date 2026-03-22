@@ -12,18 +12,16 @@ public class Message {
     private Integer id;
 
     @ManyToOne
-    @JoinColumn(name = "sender_id", nullable = false)
+    @JoinColumn(name = "sender_id")
     private User sender;
 
     @ManyToOne
-    @JoinColumn(name = "receiver_id", nullable = false)
+    @JoinColumn(name = "receiver_id")
     private User receiver;
 
-    @Column(length = 255, nullable = false)
     private String content;
 
-    @Column(nullable = false)
-    private Date date;
+    private long date;
 
     public Integer getId() {
         return id;
@@ -57,11 +55,11 @@ public class Message {
         this.content = content;
     }
 
-    public Date getDate() {
+    public long getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(long date) {
         this.date = date;
     }
 }

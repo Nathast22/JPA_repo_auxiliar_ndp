@@ -11,18 +11,16 @@ public class Recommendation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(length = 300, nullable = false)
     private String description;
 
-    @Column(nullable = false)
-    private Date date;
+    private long date;
 
     @ManyToOne
-    @JoinColumn(name = "id_trainer", nullable = false)
+    @JoinColumn(name = "id_trainer")
     private User trainer;
 
     @ManyToOne
-    @JoinColumn(name = "id_user", nullable = false)
+    @JoinColumn(name = "id_user")
     private User user;
 
     public Integer getId() {
@@ -41,11 +39,11 @@ public class Recommendation {
         this.description = description;
     }
 
-    public Date getDate() {
+    public long getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(long date) {
         this.date = date;
     }
 

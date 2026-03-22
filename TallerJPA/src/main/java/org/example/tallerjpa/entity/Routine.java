@@ -12,20 +12,12 @@ public class Routine {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(length = 100, nullable = false)
+
     private String name;
-
-    @Column(length = 300)
     private String description;
-
-    @Column(name = "creation_date", nullable = false)
-    private Date creationDate;
-
-    @Column(length = 30, nullable = false)
+    private long creationDate;
     private String type;
-
-    @Column(name = "is_predefined")
-    private Character isPredefined;
+    private boolean isPredefined;
 
     @ManyToOne
     @JoinColumn(name = "id_usuario")
@@ -58,14 +50,6 @@ public class Routine {
         this.description = description;
     }
 
-    public Date getCreationDate() {
-        return creationDate;
-    }
-
-    public void setCreationDate(Date creationDate) {
-        this.creationDate = creationDate;
-    }
-
     public String getType() {
         return type;
     }
@@ -74,12 +58,20 @@ public class Routine {
         this.type = type;
     }
 
-    public Character getIsPredefined() {
+    public long getCreationDate() {
+        return creationDate;
+    }
+
+    public void setCreationDate(long creationDate) {
+        this.creationDate = creationDate;
+    }
+
+    public boolean isPredefined() {
         return isPredefined;
     }
 
-    public void setIsPredefined(Character isPredefined) {
-        this.isPredefined = isPredefined;
+    public void setPredefined(boolean predefined) {
+        isPredefined = predefined;
     }
 
     public User getUser() {

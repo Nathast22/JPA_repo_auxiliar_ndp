@@ -12,15 +12,14 @@ public class Assignment {
     private Integer id;
 
     @ManyToOne
-    @JoinColumn(name = "id_trainer", nullable = false)
+    @JoinColumn(name = "id_trainer")
     private User trainer;
 
     @ManyToOne
-    @JoinColumn(name = "id_user", nullable = false)
+    @JoinColumn(name = "id_user")
     private User user;
 
-    @Column(name = "assignment_date", nullable = false)
-    private Date assignmentDate;
+    private long assignmentDate;
 
     public Integer getId() {
         return id;
@@ -46,11 +45,11 @@ public class Assignment {
         this.user = user;
     }
 
-    public Date getAssignmentDate() {
+    public long getAssignmentDate() {
         return assignmentDate;
     }
 
-    public void setAssignmentDate(Date assignmentDate) {
+    public void setAssignmentDate(long assignmentDate) {
         this.assignmentDate = assignmentDate;
     }
 }

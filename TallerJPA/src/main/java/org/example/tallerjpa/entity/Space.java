@@ -10,15 +10,12 @@ public class Space {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(length = 100, nullable = false)
     private String name;
 
     private Integer capacity;
 
-    @Column(length = 200)
     private String location;
 
-    @Column(length = 200)
     private String schedule;
 
     public Integer getId() {
