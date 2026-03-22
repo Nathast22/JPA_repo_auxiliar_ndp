@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="562D49DF-C7D8-CD40-9B16-EA9E5AD22B8D" name="USERS_ROLES">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 03:53:13 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USUARIO_id_usuario" id="2E407ABD-588E-B7B8-E1E6-A63518172F5E">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 03:56:26 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="921839C7-2924-5C51-7252-38913B9DFABA" referredColumn="BFC48F32-BCB4-D046-34FB-9F04BC6E06B1"/>
+</associations>
+</Column>
+<Column name="ROLES_Id" id="FEC53947-6CFE-1846-A2A0-B9B347653082">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 04:10:14 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46F70E20-49A1-FFF2-4588-7A69C3575DE2" referredColumn="7ECC4DA0-3834-66F7-590F-584A4723EF97"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB80E7F4-CD12-5EEE-6619-3E124BE9ADD2" name="USERS_ROLES_PK">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 03:54:29 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E407ABD-588E-B7B8-E1E6-A63518172F5E"/>
+<colUsage columnID="FEC53947-6CFE-1846-A2A0-B9B347653082"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C671F96A-8301-0D3F-1EFC-B73F23A1209F" name="USERS_ROLES_USERS_ROLES_FK">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 03:55:41 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E407ABD-588E-B7B8-E1E6-A63518172F5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62A37720-0422-FE15-6758-7A51CECC27A0" name="USERS_ROLES_USERS_ROLES_FKv2">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 04:10:04 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEC53947-6CFE-1846-A2A0-B9B347653082"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

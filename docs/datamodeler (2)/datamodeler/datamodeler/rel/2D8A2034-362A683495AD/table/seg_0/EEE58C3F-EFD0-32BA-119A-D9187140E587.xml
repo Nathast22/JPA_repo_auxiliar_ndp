@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EEE58C3F-EFD0-32BA-119A-D9187140E587" name="RECOMENDACIONES">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:01:08 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_recomendacion" id="45EF0E05-89E6-A1F1-BA8C-5667D3BB6FE9">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:29:16 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="FBD20A73-BF9C-E184-F553-29BB1B8FEA44">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:29:16 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="AE32280F-401C-0EC6-166B-86D6F0C2F3B2">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:29:16 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_entrenador" id="AAB9A6CF-DE86-53EE-F21C-4D98B09ADEE6">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:29:16 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7157B65F-7904-2ECD-DF64-70CA9A10E6DD" referredColumn="BFC48F32-BCB4-D046-34FB-9F04BC6E06B1"/>
+</associations>
+</Column>
+<Column name="id_usuario" id="F69E7283-21CF-9363-634B-6736DEBDE716">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:29:16 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E5168C12-10B4-EFBB-B382-2F816F070B70" name="RECOMENDACION_PK">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:29:16 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45EF0E05-89E6-A1F1-BA8C-5667D3BB6FE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52B1FF40-59BC-B470-E67D-CD33A70D95BA" name="RECOMENDACION_USUARIO_FK">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:30:18 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AAB9A6CF-DE86-53EE-F21C-4D98B09ADEE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

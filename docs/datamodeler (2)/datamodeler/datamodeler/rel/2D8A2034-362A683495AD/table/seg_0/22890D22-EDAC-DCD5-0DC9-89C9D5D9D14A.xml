@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22890D22-EDAC-DCD5-0DC9-89C9D5D9D14A" name="EVENTOS">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:01:28 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_evento" id="96200F13-30C3-0D4E-9167-C148EF553500">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:24:34 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="FF36D2A0-C8F3-B924-7EB6-135D02ADE5C2">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:24:34 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="3230B5F4-B812-B86E-43FE-A63132B68329">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:24:34 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="3F5E42E6-BCC7-4992-DE9B-947522C07C15">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:24:34 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_espacio" id="467F7309-626B-27E7-D83C-F0D7C7EAD992">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:24:34 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9BDD98E-2CB4-9987-2B35-F79868285DDA" referredColumn="F3C428DA-58A3-CD3F-09E9-2B87097C0BE1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AA2DF5DE-8AD8-4D70-2E75-D792C3AF8ECB" name="EVENTO_PK">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:24:34 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96200F13-30C3-0D4E-9167-C148EF553500"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="765CA111-6989-CF4C-2894-387F54AF08EE" name="EVENTO_ESPACIO_FK">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:25:10 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="467F7309-626B-27E7-D83C-F0D7C7EAD992"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

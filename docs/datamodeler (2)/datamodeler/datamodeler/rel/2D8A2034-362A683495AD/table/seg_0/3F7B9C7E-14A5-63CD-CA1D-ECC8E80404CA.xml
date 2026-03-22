@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3F7B9C7E-14A5-63CD-CA1D-ECC8E80404CA" name="RUTINAS">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:35:57 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_rutina" id="C1518D45-B2EB-8603-616F-5B9E744A11F2">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:38:36 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7675609-AC43-0635-B083-ACDD41F876FB" referredColumn="BFC48F32-BCB4-D046-34FB-9F04BC6E06B1"/>
+</associations>
+</Column>
+<Column name="nombre" id="E71099E8-5070-1217-6747-F1866F6DEAFF">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:38:36 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="6D9A9AD8-7A70-1879-1F90-C070609DE73B">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:38:36 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_creacion" id="CA974ED1-DC1B-278D-569A-A13AF5519481">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:38:36 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="249AEDB9-4BB5-E2B2-2FD0-679FB5408229">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:38:36 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario" id="1467FFAA-5A8F-A0F4-3CA4-E0DE4D343A37">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:38:36 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E63178B3-63DB-1D79-EC3D-10F24E3E663A" name="RUTINA_PK">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:38:36 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1518D45-B2EB-8603-616F-5B9E744A11F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6209E16A-3EDD-0C43-6375-7A24EC965A12" name="RUTINA_USUARIO_FK">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:42:04 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1518D45-B2EB-8603-616F-5B9E744A11F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43D3B585-CAF2-5CC8-B74B-40CF5CAF0243" name="PERMISOS">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 04:17:03 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="D6CEA69E-754E-0E30-5FA7-6C7102F0C342">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 04:17:55 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="76ACB53B-7535-BD7A-0EDA-41B1E2DC2674">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 04:17:55 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C735BE43-087F-6849-5DE2-B190B92D760F" name="PERMISOS_PK">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 04:17:55 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6CEA69E-754E-0E30-5FA7-6C7102F0C342"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

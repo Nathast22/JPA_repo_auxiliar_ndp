@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="19ECD02F-D879-A27D-825D-6FFF8CBCA9D7" name="ROLES_PERMISOS">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 04:14:35 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="6B232CED-B10D-34C5-7B05-5B793146B88E">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 04:15:51 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROLES_Id" id="B1862B4A-EF1E-FDE3-D387-859E0E41C25E">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 04:16:14 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="862FD390-FC9E-4D84-C544-B370689CD21D" referredColumn="7ECC4DA0-3834-66F7-590F-584A4723EF97"/>
+</associations>
+</Column>
+<Column name="PERMISOS_Id" id="945A5C8B-90B5-6252-7EBE-9189544E261B">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 04:18:35 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50420947-519C-DA62-D60F-043627C80AB5" referredColumn="D6CEA69E-754E-0E30-5FA7-6C7102F0C342"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF2AAADB-D197-7B59-A03B-656548C87C87" name="ROLES_PERMISOS_PK">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 04:15:55 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B232CED-B10D-34C5-7B05-5B793146B88E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4F9DF66-1877-34C3-F3A4-73E25C2FEE52" name="ROLES_PERMISOS_ROLES_PERMISOS_FK">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 04:16:03 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1862B4A-EF1E-FDE3-D387-859E0E41C25E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F2E80E2-BA22-0DA5-E5E4-BC11BB923B2D" name="ROLES_PERMISOS_ROLES_PERMISOS_FKv2">
+<createdBy>DiDi</createdBy>
+<createdTime>2026-03-05 04:18:28 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="945A5C8B-90B5-6252-7EBE-9189544E261B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

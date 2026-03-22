@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC5040A0-296A-2EF4-0693-46AF6EFAA649" name="USUARIOS">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:06:16 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_usuario" id="BFC48F32-BCB4-D046-34FB-9F04BC6E06B1">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:26:23 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="0FC3203A-D48C-4C38-DA11-1179CBECA35A">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:26:23 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo" id="D9D29D9F-2403-11C5-1833-0143F0F539A9">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:26:23 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contraseña" id="57314217-A875-EEBE-E58D-C7A4C8FAA9B6">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:26:23 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_registro" id="0D35CB72-C6E0-C67B-7A83-374D382BE8BA">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:26:23 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="03C3EED2-6740-11AB-9897-6D51F05B791F">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:26:23 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3CBF231A-A2C0-92FA-F7C7-F42CB8B58D37" name="USUARIO_PK">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:26:23 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BFC48F32-BCB4-D046-34FB-9F04BC6E06B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0AADD8CE-2D4E-B4E9-A815-B76F5133A834" name="UK_USUARIO_CORREO">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:35:20 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9D29D9F-2403-11C5-1833-0143F0F539A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

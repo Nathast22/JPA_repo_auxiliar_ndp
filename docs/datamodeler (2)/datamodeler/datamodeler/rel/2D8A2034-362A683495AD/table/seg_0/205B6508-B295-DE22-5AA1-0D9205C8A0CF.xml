@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="205B6508-B295-DE22-5AA1-0D9205C8A0CF" name="ASIGNACIONES">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:00:52 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_asignacion" id="3952F165-DE94-3912-40F5-D3AFFB698DC3">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:16:05 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_entrenador" id="BA243598-6D95-A06F-58C0-A5C51DB1C2B1">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:16:05 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F334A741-2B29-1103-CFC7-A78467C8B1FC" referredColumn="BFC48F32-BCB4-D046-34FB-9F04BC6E06B1"/>
+</associations>
+</Column>
+<Column name="id_usuario" id="7305B703-54F4-517B-E053-7F75FEB21BB5">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:16:05 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_asignacion" id="D1F6D62F-07E6-0DA7-397B-7AE94421D70F">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:16:05 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4F95E8C1-28B7-6CA7-664C-BB9EC6D85DB2" name="ASIGNACION_PK">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:16:05 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3952F165-DE94-3912-40F5-D3AFFB698DC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="200D4036-A7A2-BF29-A90F-CAC7201CAFBE" name="ASIGNACION_USUARIO_FK">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 16:17:11 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA243598-6D95-A06F-58C0-A5C51DB1C2B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="93CC51C3-4BA9-78AB-A3D4-94E3864EBBC6" name="RUTINAS_EJERCICIOS">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:49:36 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_rutina" id="94E69435-9D62-2056-D0BE-A626D4051BD4">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:51:19 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36D89A9E-A177-C1B2-1362-5060A3B14AC3" referredColumn="C1518D45-B2EB-8603-616F-5B9E744A11F2"/>
+</associations>
+</Column>
+<Column name="id_ejercicio" id="8BCE4310-5EDE-4343-F548-D6675D887366">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:51:19 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23B6B155-655A-3175-9251-7ACB4EC00703" referredColumn="78379CAE-1297-39C5-6D01-8E75CCC406AE"/>
+</associations>
+</Column>
+<Column name="orden" id="4C20C0E7-7D04-ADA0-0F94-9B92750F4F14">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:51:19 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="repeticiones" id="0C876D9E-6773-3C45-09DC-E0F8ACE02B51">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:51:19 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tiempo" id="51028235-964B-8139-351B-283F2D12B2BD">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:51:19 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F31B6E32-626D-6071-2D75-937DEF05D3C7" name="RUTINA_EJERCICIO_PK">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:53:15 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94E69435-9D62-2056-D0BE-A626D4051BD4"/>
+<colUsage columnID="8BCE4310-5EDE-4343-F548-D6675D887366"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52EF5288-7177-31CC-F75A-4DC00EF56DE9" name="RUTINA_EJERCICIO_RUTINA_FK">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:58:05 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94E69435-9D62-2056-D0BE-A626D4051BD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C8CF42D-5311-2550-0E83-57C79212977E" name="RUTINA_EJERCICIO_EJERCICIO_FK">
+<createdBy>1062014338</createdBy>
+<createdTime>2026-02-28 15:58:05 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BCE4310-5EDE-4343-F548-D6675D887366"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
