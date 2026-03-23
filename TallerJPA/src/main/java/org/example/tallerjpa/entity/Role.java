@@ -1,6 +1,7 @@
 package org.example.tallerjpa.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
 
 import java.util.List;
 
@@ -16,6 +17,7 @@ public class Role {
     @OneToMany(mappedBy = "role", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<UserRole> userRoles;
 
+    @NotEmpty(message = "Un rol debe tener al menos un permiso.")
     @OneToMany(mappedBy = "role", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<RolePermission> rolePermissions;
 

@@ -20,7 +20,7 @@ public class RoutineExercise {
     @JoinColumn(name = "id_ejercicio")
     private Exercise exercise;
 
-    private Integer order;
+    private Integer exerciseOrder;
     private Integer repetitions;
     private Integer duration;
 
@@ -48,12 +48,12 @@ public class RoutineExercise {
         this.exercise = exercise;
     }
 
-    public Integer getOrder() {
-        return order;
+    public Integer getExerciseOrder() {
+        return exerciseOrder;
     }
 
-    public void setOrder(Integer order) {
-        this.order = order;
+    public void setExerciseOrder(Integer exerciseOrder) {
+        this.exerciseOrder = exerciseOrder;
     }
 
     public Integer getRepetitions() {

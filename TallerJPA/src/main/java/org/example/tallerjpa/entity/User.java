@@ -1,6 +1,7 @@
 package org.example.tallerjpa.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
 import java.util.List;
 
 @Entity
@@ -16,6 +17,7 @@ public class User {
     private Long register_date;
     private String state;
 
+    @NotEmpty(message = "Un usuario debe tener al menos un rol.")
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<UserRole> userRoles;
 
